@@ -1,0 +1,7 @@
+anthropic
+yt-dlp
+youtube-transcript-api
+assemblyai
+requests
+predictionguard
+python-dotenv

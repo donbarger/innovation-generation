@@ -1,0 +1,69 @@
+Last week I flew from DC to San Francisco for a gathering of missional innovation leaders. It was one of those meetings where the conversations feel like they’re leaning a few years into the future. AI. Formation. Global strategy. The kinds of things that stretch your imagination and make you rethink what’s possible.
+
+
+
+
+Somewhere over Kentucky a colleague texted me and asked a simple question. Do you think we could build a video game based on the Oregon Trail that teaches people about global missions? A kind of Missional Trail. A game that takes people through the realities of lostness, cultural barriers, persecution, and calling. A game that makes the missionary task feel real.
+
+I said I didn’t know. Then I said what I usually say. “How might we?”
+
+Right there on the plane, I began to build a pitch deck and instructions for programming the game. I opened up Claude Code on the airplane WiFi and started building. No big plan. No storyboard. Just some vibe coding at 38,000 feet. By the time we touched down in San Francisco I had a working prototype. The game actually ran. Not polished. Not complete. But it worked.
+
+
+
+
+Here’s the thing that is shocking. This would not have been possible a year ago. Probably not even six months ago. But now? You can take an idea that lives in the back of your mind and bring it into the world before the wheels hit the runway.
+
+It reminded me of something I keep telling leaders. AI doesn’t just speed up your work. It speeds up your imagination. It collapses the distance between the idea and the first draft. Between the first draft and the first experiment. Between the experiment and something people can actually use.
+
+The Missional Trail prototype is still in the works. The storyline and decision tree still need work. The mechanics certainly need refining. It’s running local and a third of the features are merely placeholders. But it exists. And a few hours earlier it didn’t.
+
+
+
+
+There is something profound happening today. When tools like these remove the barrier between inspiration and execution, it changes who gets to build. It changes how quickly ministry ideas can become ministry tools. It changes what very small teams can do. It changes what a missionary, a pastor, a student, or a volunteer can try before they talk themselves out of it.
+
+Somewhere over Kentucky I learned that you really can vibe code on a plane.
+
+More importantly, I learned again that the future of innovation in ministry belongs to the people courageous enough to try things before they feel ready. People who are not afraid to ask…. “How might we?”
+
+The Missional Trail is coming. And it started at 38,000 feet!
+-------------------
+
+The Internet is Listening
+and it's not forgetting
+
+What if the conversations you thought were deleted were not actually gone at all? What if the things you said in a moment of convenience or curiosity were still sitting out there, quietly preserved, long after you moved on? That’s not science fiction, and it is not alarmism. It’s simply the world we live in. Welcome to the world of AI and big data.
+
+
+
+
+When OpenAI removed tens of thousands of ChatGPT links from Google this summer, it created a sense of relief. Headlines framed it as a cleanup. People assumed the problem had been handled. It was just false sense of security.
+
+People started looking deeper, and what they found was the part that should cause all of us to pause. More than one hundred thousand ChatGPT conversations were still stored in the Wayback Machine. They were captured, archived, and preserved beyond the reach of OpenAI or the users who originally created them. These were not hacked files, stolen emails, or compromised servers. They were simply moments people believed were temporary that ended up being anything but temporary. The internet remembered, because that’s what it does. Now AI makes accessing that memory much easier.
+
+Once researchers looked through what had been indexed, the reality was even more sobering. There were conversations that revealed a corporate attorney exploring strategies for pressuring Indigenous communities into selling land at unfair prices. There were comments from a frustrated citizen in an authoritarian country who thought they were speaking in private. There were full graduate theses that students had pasted in because they wanted help writing them. There were deeply personal stories from trauma survivors who assumed the space was protected. None of these people expected their words to appear in a public archive that anyone could search. Yet there they were for anyone to read.
+
+Remember, this was not a breach or a criminal event. It was simply bad data policies and a design choice that produced consequences. A feature that made sharing convenient also created a permanent trail. Once those trails were captured by the internet’s archiving systems, no one could get them back.
+
+This matters because people, companies, ministries, and governments are already leaking information without realizing it. Many think the danger is that AI might give the wrong answer, or that models might be biased. I’m not saying those concerns are not important, but they distract from a much larger issue. Most people believe the delete button actually deletes. They think digital spaces work like notebooks, where you can just rip out a page. That is not how any of this works. Once text has been crawled, indexed, copied, forwarded, archived, or saved in a backup, it has a life of its own.
+
+Most organizations in 2025 would never allow employees to bring their own personal computers to work, but they have no plan for the very powerful AI tools their staff use daily. People paste sensitive numbers, hiring decisions, contract terms, pastoral counseling details, and proprietary intellectual property into AI tools because they want quick answers with minimal effort. They believe the system will simply give them an answer, and I guess after that, the info will just vanish. But it does not vanish. It becomes one more data point floating in the world.
+
+The internet has always absorbed information. AI has simply made the absorption faster and the memory stronger.
+
+I’m not telling anyone to avoid these tools entirely. I use them every day. If you want to generate a silly picture of a rabbit wearing a Superman cape while blasting off to the moon, go ahead. If you want a humorous story about Lane Kiffin leaving LSU to coach at UAB, enjoy yourself. I may have created that story already! What concerns me is when people treat these tools as if they are secure vaults. They are not vaults. They are more like mirrors that never fully stop reflecting what you put in front of them.
+
+A simple principle helps. Do not type anything into a proprietary AI tool that you would not be comfortable reading in front of a room full of people who have influence over your life. That might feel extreme, but it reflects reality. Once something enters a digital system, you cannot assume it will remain private. You cannot assume it will be forgotten.
+
+So what should leaders do given this reality?
+
+The first task is to assume something sensitive is already circulating and to check.
+
+The second is to reevaluate the tools your organization uses. Proprietary tools like Claude, Gemini, and ChatGPT can be extremely helpful, but they are not safe. Sometimes open-source or self-hosted AI systems are far better for stewarding information.
+
+The third is to raise the level of digital literacy within your team. Teaching someone “how to prompt” is not the same as teaching them how to think about their words as if they may someday be read by someone who was never the intended audience.
+
+Finally, leaders must begin tracking where data goes, not just where it begins. Backups, forwarded links, shared documents, and archives all create potential points of exposure.
+
+The larger lesson is simple. The internet is remembering more than it ever has. AI has accelerated that memory. The safest posture is the oldest one. Speak, type, and prompt with the understanding that someone you would prefer not to hear it may one day come across what you wrote. Not because the internet is out to get you, but because the internet is listening… and it’s not forgetting.
