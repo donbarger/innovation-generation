@@ -1,0 +1,66 @@
+**RAILCheck – AI Project Health Dashboard**
+
+A lightweight SaaS that lets founders and product teams run the R‑A‑I‑L questionnaire in seconds, visualizing revenue traction, two‑week acceleration potential, real‑user adoption, and learning loops. It generates a “Flood‑Zone” score and actionable nudges to move a prototype toward high‑ground viability.
+
+**Why it matters**
+- Gives investors a transparent, data‑driven way to screen deals before committing millions.  
+- Saves startups weeks of guesswork by surfacing the exact levers (cash, speed, usage, feedback) they need to tighten.  
+- Reduces churn and wasted burn by flagging projects that lack a revenue‑ready moat early on.
+
+**Key Insight**  
+If you can’t answer the four R‑A‑I‑L questions positively, you’re already standing in the flood zone.
+
+**Think About It**  
+How would your funding pipeline change if every pitch came with an instant “RAIL health” badge?  
+
+---  
+
+**Strategic Edge Planner – AI Role Resilience Coach**
+
+A personal dashboard that audits an employee’s daily tasks, tags them as scripted or strategic, and auto‑suggests AI tools to eliminate the scripted work. It then curates learning modules, deep‑work schedules, and relationship‑building prompts to grow the human‑only strategic edge.
+
+**Why it matters**
+- Empowers individuals to stay indispensable by pre‑emptively automating the parts AI will soon own.  
+- Helps managers identify talent ready for higher‑impact roles, reducing layoff risk.  
+- Turns “busy work” into measurable time for creativity, networking, and domain mastery.
+
+**Key Insight**  
+Your survival hinges not on what you do now, but on how quickly you can offload the scripted to focus on strategic judgment.
+
+**Think About It**  
+What would your workday look like if every repetitive task disappeared tomorrow?  
+
+---  
+
+**VerticalAI Builder – Niche App Accelerator Platform**
+
+A low‑code accelerator that pairs domain experts with AI engineers to co‑create vertical AI applications (e.g., legal brief analysis, radiology triage, church outreach planning). It supplies vetted data pipelines, compliance checklists, and a “Rigor Score” to ensure deep domain validation before launch.
+
+**Why it matters**
+- Cuts the time to market for high‑value niche AI solutions from months to weeks.  
+- Guarantees credibility with a rigor metric, attracting early‑adopter customers in regulated fields.  
+- Creates a sustainable revenue stream for founders who avoid the crowded horizontal AI market.
+
+**Key Insight**  
+In the AI economy, value is captured not by building the model, but by delivering a rigorously vetted, domain‑specific solution.
+
+**Think About It**  
+Which underserved professional community you know could be transformed by a focused AI tool you could help build?  
+
+---  
+
+**HumanTrust Layer – AI‑Powered Relationship Management Suite**
+
+An AI‑enhanced CRM that goes beyond contacts, analyzing conversation tone, follow‑up latency, and shared interests to surface “trust signals.” It prompts users with personalized outreach suggestions, helping leaders cultivate the Rig‑Relationship‑Resilience triad at scale.
+
+**Why it matters**
+- Turns data‑rich interactions into authentic relationship‑building, a differentiator in an AI‑generated world.  
+- Increases client retention and referral rates by surfacing moments where genuine connection is needed.  
+- Provides measurable metrics on relationship health, feeding back into performance reviews and team culture.
+
+**Key Insight**  
+When AI can create anything, the real competitive advantage becomes the ability to generate and maintain human trust.
+
+**Think About It**  
+How might your organization’s growth change if every team member had a real‑time “trust score” for each contact?
+

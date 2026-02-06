@@ -1,53 +1,56 @@
-# learn-bible
+# Innovation Generation
 
-Automated devotion generation pipeline that converts YouTube sermon transcripts (Zac Poonen's "All That Jesus Taught" series) into conversational daily devotions using Claude AI.
+Automated innovation content pipeline that converts YouTube video transcripts into innovation articles and Substack notes using PredictionGuard AI.
 
 ## Tech Stack
 
 - Python 3.13 with virtual environment at `.venv/`
-- Anthropic Claude API (Haiku 4.5 with prompt caching)
+- PredictionGuard API (gpt-oss-120b model) for content generation
+- FastAPI backend serving both API and frontend
+- Vanilla HTML/CSS/JS frontend (no React/Node required)
 - yt-dlp + youtube-transcript-api for transcript extraction
 - AssemblyAI as fallback transcription service
 
-## Setup
+## Quick Start
 
 ```bash
-source .venv/bin/activate
+./run.sh
 ```
 
-Required env vars: `ANTHROPIC_API_KEY` (or `CLAUDE_API_KEY`), `ASSEMBLYAI_API_KEY` (optional, also reads from `assembly_ai.txt`).
+That's it. The script creates a virtual environment, installs dependencies, and launches the server at `http://localhost:8000`.
 
-## Key Commands
-
-### Generate devotions from a YouTube playlist
-
-```bash
-python scripts/generate_devotions_pipeline.py \
-  --playlist "https://youtube.com/playlist?list=PLAYLIST_ID" \
-  --api-key $ANTHROPIC_API_KEY \
-  --output devotions \
-  --style-ref presentation_transcript.txt
+Required: A `.env` file with:
 ```
-
-Pulls transcripts, generates 3-4 devotions + 2 Substack notes per video, saves to text files and CSV. Skips already-processed videos.
-
-### Download audio from a single YouTube video
-
-```bash
-python scripts/download_youtube_audio.py "https://youtube.com/watch?v=VIDEO_ID"
-python scripts/download_youtube_audio.py "https://youtube.com/watch?v=VIDEO_ID" --output my_audio.m4a
+PREDICTIONGUARD_API_KEY=your_key
+PREDICTIONGUARD_URL=https://globalpath.predictionguard.com
+ASSEMBLYAI_API_KEY=your_key  (optional, for videos without captions)
 ```
 
 ## Project Structure
 
-- `scripts/` - Pipeline and utility scripts
-- `devotions/` - Generated devotion text files (~155 files)
-- `transcripts/` - YouTube sermon transcripts (~77 files)
-- `presentation_transcript.txt` - Style reference for conversational tone
-- `channel_about.txt` - Channel voice/brand guidelines
-- `devotion_generation_guidelines.txt` - Generation rules and quality checklist
-- `devotions_project_process.txt` - Full project documentation
+- `run.sh` — One-command launcher (creates venv, installs deps, starts server)
+- `backend/app.py` — FastAPI server (API + static file serving)
+- `frontend/` — Self-contained HTML/CSS/JS UI
+- `core/` — Core Python modules:
+  - `generator.py` — Main orchestration (transcript → innovations)
+  - `transcription.py` — YouTube/AssemblyAI transcript extraction
+  - `ai_models.py` — PredictionGuard API integration
+  - `utils.py` — Shared utilities
+- `scripts/` — Standalone pipeline scripts (batch/single video)
+- `innovations/` — Generated innovation text files and CSV
+- `innovations/substack_notes/` — Generated Substack note files
+- `transcripts/` — Saved video transcripts
+
+## API Endpoints
+
+- `POST /api/generate` — Start a generation job from YouTube URL
+- `GET /api/jobs/{job_id}` — Poll job status and progress
+- `GET /api/videos` — List all processed videos with counts
+- `GET /api/videos/{video_id}` — Full detail: transcript, innovations, notes
+- `DELETE /api/videos/{video_id}` — Delete all content for a video
+- `DELETE /api/videos/{video_id}/innovations/{title}` — Delete single innovation
+- `GET /api/health` — Health check
 
 ## Content Guidelines
 
-Devotions must be conversational (like talking to a friend), use simple language, address the reader as "you", and extract biblical principles without copying the speaker's personal stories or biographical details. No theological jargon. See `devotion_generation_guidelines.txt` for full rules.
+Innovations should be conversational, use simple language, address the reader as "you", and extract innovation insights from transcripts. See `innovation_generation_guidelines.txt` and `channel_about.txt` for voice/style rules.
