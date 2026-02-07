@@ -49,12 +49,12 @@ Or simply double-click `frontend/index.html` (with CORS limitations).
 ## UI Sections
 
 ### Generation Panel
-- Paste any YouTube URL
+- Paste any YouTube URL or the URL to an online article
 - Real-time progress updates with emojis
 - Status colors: blue (running), green (success), red (error)
 
 ### Transcripts
-- Shows transcripts extracted from videos
+- Shows transcripts extracted from videos or articles
 - Useful for reference
 
 ### Innovations (Articles)
@@ -115,3 +115,4 @@ Core Modules
 - Add search/filter for past generations
 - Export results as PDF or Markdown
 - Add ability to edit generated content before saving
+- Add ability to select different system prompts for different types of material
