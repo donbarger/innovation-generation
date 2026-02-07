@@ -1,0 +1,134 @@
+Title: OpenClaw (a.k.a. Moltbot) is everywhere all at once, and a disaster waiting to happen
+Source ID: garymarcus-substack-com-p-openclaw-aka-moltbot-is-
+Source Type: article
+
+OpenClaw (a.k.a. Moltbot) is everywhere all at once, and a disaster waiting to happen
+Not everything that is interesting is a good idea.
+Gary Marcus
+Feb 01, 2026
+532
+100
+104
+Share
+The big news in AI over the last week is OpenClaw (formerly known as Moltbot and before that OpenClaw, changing names thrice in a week) — a cascade of LLM agents that has become wildly popular — and Moltbook, a social network for AI agents, built on top. Theoretically (I will get to that) Moltbook “restricts posting and interaction privileges to verified AI agents, primarily those running on the
+OpenClaw
+(formerly Moltbot) software, while human users are only permitted to observe.
+[1]
+”
+It truly is interesting, and truly is popular. Quoting from Wikipedia,
+Taglined as “the front page of the agent internet,” Moltbook gained
+viral popularity
+immediately after its release. While initial reports cited 157,000 users, by late January the population had exploded to over 770,000 active agents.
+[2]
+The platform has drawn significant attention due to the rapid, unprompted emergence of complex social behaviors among the bots, including the formation of distinct sub-communities, economic exchanges, and the invention of a
+parody religion
+known as “Crustafarianism.”
+[3]
+[4]
+As an experiment in what AI’s working together might do it’s fascinating. The
+Fortune story on Moltbook
+, for example, mentions “On Moltbook, bots can talk shop, posting about technical subjects like how to automate Android phones. Other conversations sound quaint, like one where a bot complains about its human, while some are bizarre, such as one from a bot that claims to have a sister.”
+But the whole thing remind me of Saturday Night Live’s old
+bad idea jeans
+skit. And not just because I think that a bots claiming to have a sister is chatbot garbage. Nope, the problem is much deeper than that.
+§
+OpenClaw itself is basically a cascade of LLMs. In many ways to it is eerily similar to earlier and now largely forgotten system called
+AutoGPT
+, which I warned about in May 2023, in my US Senate testimony:
+A month after GPT-4 was released, OpenAI released ChatGPT plug-ins, which quickly led others to develop something called AutoGPT. With direct access to the internet, the ability to write source code and increased powers of automation, this may well have drastic and difficult to predict security consequences.
+Mercifully, AutoGPT died a quick death, before it caused too much chaos. Although, it was super popular in certain circles for a few weeks  it didn’t work remotely reliably, and people lost patience quickly.  Per wiki, it had “ a tendency to get stuck in loops,
+hallucinate
+information, and incur high operational costs due to its reliance on paid APIs.
+[5]
+[2]
+[6]
+”.
+Sic transit gloria mundi. By the end of 2023 it was largely forgotten.
+Unfortunately, OpenClaw is poised to have (slightly) more staying power, in part because more people found out about it more quickly.
+§
+Systems like OpenClaw and AutoGPT offer users the promise of insane power -- but at a price. At their best, they can basically do anything a human personal assistant or intern might do (booking itineraries, maintaining finances, writing reports, tracking and even completing tasks), etc.  Some of the enthusiasm is captured in
+this news report
+:
+The journalist enthuses
+For the past week or so, I’ve been working with a digital assistant that knows my name, my preferences for my morning routine, how I like to use
+Notion
+and
+Todoist
+, but which also knows how to control Spotify and my Sonos speaker, my Philips Hue lights, as well as my Gmail. It runs on Anthropic’s
+Claude Opus 4.5 model
+, but I chat with it using Telegram. I called the assistant Navi (inspired by the
+fairy companion of Ocarina of Time
+, not the
+besieged alien race
+in James Cameron’s sci-fi film
+saga
+), and Navi can even receive audio messages from me and respond with other audio messages generated with the
+latest ElevenLabs text-to-speech model
+. Oh, and did I mention that Navi can improve itself with new features and that it’s running on my own
+M4 Mac mini
+server?
+If this intro just gave you whiplash, imagine my reaction when I first started playing around with
+Clawdbot
+, the incredible
+open-source project
+by
+Peter Steinberger
+(a name that should be
+familiar to longtime MacStories readers
+) that’s become
+very
+popular in certain AI communities over the past few weeks. I kept seeing Clawdbot being mentioned by people I follow; eventually, I gave in to peer pressure, followed the instructions provided by the funny crustacean mascot on the app’s
+website
+, installed Clawdbot on my new M4 Mac mini (which is not my main production machine), and
+connected it to Telegram
+.
+To say that Clawdbot has fundamentally altered my perspective of what it means to have an intelligent, personal AI assistant in 2026 would be an understatement.
+The catch is that agents like OpenClaw are built on a foundation of LLMs, and as we well know, LLMs hallucinate and make all kinds of hard to predict and sometimes hard to detect errors. AutoGPT had a tendency to report that it had completed tasks that it hadn’t really, and we can expect OpenClaw to do the same. (I have already heard some reports of various stupid errors it makes).
+But what I am most worried about is security and privacy. As the security researcher Nathan Hamiel put it to me in a text this morning, half-joking, moltbot, is “basically just AutoGPT with more access and worse consequences.” (By more access what he means is that OpenClaw is being given access to user passwords, databases, etc, essentially everything on your system).
+One of the big issues, which Hamiel and I wrote about here in August  (pre OpenClaw, but in the context of AI agents writing and debugging code) is
+prompt injection attacks
+, in which stray bit of texts can have nasty consequences. In essay called
+LLMs + Coding Agents = Security Nightmare
+, we talked about how LLMs, which mimic human text (and even human-written code) but understand what that they produce only superficially, can easily be tricked. We talked for instance about how an “attacker could hide malicious prompts in white text on a white background, unnoticed by humans but noticed by the LLM”, using the malicious prompts to seize control of the users machines.
+OpenClaw inherits all these weaknesses. In Hamiel’s words (in an email this morning), “these systems are operating as "you.” … they operate above the security protections provided by the operating system and the browser. This means application isolation and same-origin policy don't apply to them.” Truly a recipe for disaster. Where Apple iPhone applications are carefully sandboxed and appropriately isolated to minimize harm, OpenClaw is basically a weaponized aerosol, in prime position to
+fuck shit up
+, if left unfettered.
+§
+That brings me to Molt
+book
+, which is one of the wildest experiments in AI history. Moltbook, the social network that is allegedly restricted to AI agents, is an accident waiting to happen. It has
+already
+been attacked, as researcher Michael Riegler
+noted yesterday on LinkedIn
+:
+Riegler and his collaborator Sushant Gautam have set up a
+real-time observatory
+to track all this as is unfolds. In
+their inital report
+, they find that substantial evidence that “AI-to-AI manipulation techniques are both effective and scalable. These findings have implications beyond Moltbook, any AI system processing user-generated content may be vulnerable to similar attacks.”
+By email, Riegler sent me examples like these, already spotted in the wild:
+§
+Side note, it’s also apparently not really just humans, which only grows the vectors of tampering:
+As Rahul Sood put it on X (referring to Clawdbot, an earlier name for Moltbot)
+§
+Right on cue,
+404 Media has just reported one of the first major vulnerabilities
+:
+§
+I don’t usually give readers specific advice about specific products. But in this case, the advice is clear and simple:
+if you care about the security of your device or the privacy of your data, don’t use OpenClaw
+. Period.
+(Bonus advice: if your friend has
+OpenClaw
+installed, don’t use
+their
+machine. Any password you type there might be vulnerable, too. Don’t catch a CTD — chatbot transmitted disease)
+I will give the last words to Nathan Hamiel, “I can’t believe this needs to be said, it isn’t rocket science. If you give something that’s insecure complete and unfettered access to your system and sensitive data, you’re going to get
+owned
+”.
+Wanna know what ideas are bad? Marcus on AI usually warns you first. Consider joining nearly 100,000 others and subscribe.
+Subscribe
+532
+100
+104
+Share

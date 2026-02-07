@@ -1,0 +1,54 @@
+**When I Saw 246 Languages on a Screen, I Heard the Great Commission**
+
+I was scrolling through a demo of a new AI translation tool the other day, and the screen filled with a scrolling list: Acèh, Afrikaans, Amharic, Aymar … Yorùbá, Zazaki. By the time the list hit “中文,” I’d counted 246 distinct tongues. My heart did a little jump. Not because I was impressed by the engineering—though the code behind that list is nothing short of wizardry—but because the number of languages reminded me of a phrase that has haunted missionaries for centuries: “make disciples of all nations.”  
+
+In the early days of the church, “nation” meant tribe or city‑state. Today, a nation is a digital packet of data, a language tag in a software library, a line of code that tells a server how to render a character. The same word that once described a geopolitical unit now lives inside a computer’s memory. The fact that a single piece of software can recognize a language spoken by a handful of people on a remote island, and also the lingua franca of a megacity, feels like a modern echo of the biblical mandate to go to the ends of the earth.  
+
+I thought about the first missionaries who carried a single Bible translation into a new language. They had to learn the sounds, the idioms, the cultural weight of each word. They were, in effect, early programmers—writing the “software” of the gospel in a new human language. Today, AI can take that same text and instantly render it into 245 other dialects. The speed is dizzying, but the principle is unchanged: we’re trying to make the story of Christ understandable wherever a human ear can hear.  
+
+What does this mean for us, sitting in our coffee‑shop offices, typing prayers into a chat window? It means we have a responsibility to steward these tools. The same engine that can translate a hymn into Bislama can also be weaponized to spread misinformation or to erase the nuance of a local tradition. The technology is neutral; the intent is not.  
+
+When I look at that scrolling list, I’m reminded of the Psalmist’s line, “Let the nations be glad and sing for joy.” The list is a promise and a warning. It promises that the digital age can finally make the “all nations” part of the Great Commission literal, but it warns that we must be intentional about how we use that power.  
+
+So I ask you, dear reader: as we build and adopt these tools, are we listening for the still, small voice that says, “Speak truth in love, in every language the world knows”? Or are we simply adding another row to the spreadsheet of data?  
+
+May the next time you see a list of languages on a screen, hear not just code, but a chorus of people waiting for the story that changes everything.  
+
+---  
+
+**Computers Don’t Think—They Follow Commands. So Do Our Hearts?**  
+
+I remember the first time I tried to “talk” to a computer. I typed, “What’s the weather?” and watched the screen flash back a crisp, factual answer. I was amazed that a machine could understand my words, process them, and spit out something useful. Yet, as the novelty faded, a deeper truth settled in: the computer wasn’t *thinking*; it was executing a set of instructions written by someone else.  
+
+That realization hit me harder the day I was debugging a chatbot for a church outreach project. The bot would answer, “How can I pray for you?” with a canned response about prayer, but when a user typed, “I’m scared of my boss,” the bot replied, “Did you know the earth orbits the sun?” The error wasn’t a bug in the hardware; it was a flaw in the script—a missing conditional branch that told the machine how to *listen* and *respond* appropriately.  
+
+It made me think of the Apostle Paul’s warning in Romans 12:2: “Do not be conformed to this world, but be transformed by the renewing of your mind.” The mind, like a computer, can be programmed. We feed it data, we set up loops of thought, we install operating systems of belief. If we aren’t careful, we become machines that execute the last command we received, whether that command is from Scripture or from the endless scroll of a news feed.  
+
+The difference, of course, is that we have *free will*. A computer can’t choose to ignore a line of code; we can choose to reject a narrative that doesn’t honor God. Yet the analogy is useful: just as a programmer must write clear, compassionate code to avoid harmful outputs, we must tend the “software” of our hearts with prayerful intention.  
+
+In the past week, I asked a friend in ministry to pray for wisdom as she drafted a sermon using AI‑generated outlines. She confessed that the AI kept suggesting “modern” anecdotes that felt shallow. Together we paused, opened the Bible, and let the Holy Spirit be the ultimate “debugger.” The final sermon didn’t look like a tidy algorithm—it was messy, personal, and, I think, more alive.  
+
+So the next time you sit at a keyboard, ask yourself: what command am I feeding my own processor? Am I loading a script that glorifies the Creator, or am I letting the default settings of culture dictate my output?  
+
+May we be intentional programmers of our own souls, writing code that points always back to the One who wrote the original source code of love.  
+
+---  
+
+**From Looms to Laptops: How the Oldest Programmable Machines Echo the Church’s Mission**  
+
+There’s a story I love to tell at conferences: a 19th‑century textile mill in France, humming with the clatter of the Jacquard loom. Its punch cards—tiny pieces of paper with holes punched in a pattern—told the loom what design to weave. In a way, those cards were the first “software.”  
+
+Fast forward a century, and I’m on a plane, fingers dancing over a laptop, coaxing a large‑language model to draft a devotional. The interface is sleek, the processors invisible, but the principle is the same: a set of instructions tells a machine *what* to do. The medium has changed, but the underlying act of *programming*—of giving a tool a purpose—remains.  
+
+What strikes me is how this lineage mirrors the church’s own journey. The early disciples were “programmers” of a very different kind. They took the raw, unwieldy gospel and, through preaching, teaching, and living, encoded it into the lives of believers. Each baptism was a kind of “installation” of the gospel into a new heart. The Apostle Paul wrote letters that acted as “updates,” refining doctrine, fixing misunderstandings, and adding new features—like the doctrine of justification by faith.  
+
+When the industrial revolution birthed the first programmable looms, it sparked a cultural shift: humans could now delegate repetitive, intricate tasks to machines, freeing themselves for creativity. In the same way, when we hand off routine tasks—scheduling, data entry, even initial counseling—to AI, we free ourselves for deeper pastoral work: listening, discerning, praying.  
+
+But there’s a caution embedded in that history. The loom’s punch cards were immutable once punched; a mistake meant re‑weaving the whole fabric. Early computers required rewiring to change a program. Likewise, the church has struggled with rigid doctrines that resist revision, even when the “code” no longer fits the cultural context. The key is flexibility: the ability to edit the script without discarding the whole tapestry.  
+
+I recently sat with a group of seminary students who were building a prototype of a “Missional Trail” game—an interactive way to teach global missions. Their challenge was not just technical (how to code branching storylines) but theological: how to represent the pain of persecution without exploiting it, how to embed prayer into gameplay without making it a gimmick. They were, in essence, writing a new kind of punch card, one that blends code with creed.  
+
+The lesson for us is simple: every generation receives a new set of tools, but the core mission stays the same—to make disciples, to bear witness, to love. Whether we’re feeding a loom, a mainframe, or a cloud‑based AI, we are still “programming” the world with the story of Christ.  
+
+So as you open your laptop tonight, or perhaps glance at the old wooden cross on your wall, ask yourself: what is the next line of code you’re adding to the grand tapestry? May it be one that weaves mercy, truth, and hope into every pattern we create.
+

@@ -1,0 +1,32 @@
+**When AI Speaks 173 Languages, Who Is Listening?**
+
+I was on a cramped train ride from Nashville to a conference in Austin when the seat‑back screen flickered to a demo of a new AI model that could answer questions in any language you could think of. I watched as the system swapped from Amharic to Asturian, from Basque to Burmese, and even threw in a few scripts I’d never seen before—​the kind of alphabet you only notice when you’re looking at a museum placard. The list stretched on, a dizzying roll of 173 languages, each one a doorway into a community I’d never visited.
+
+The moment the AI answered a question in Lao, I felt a strange tug. My mind raced to the missionaries I’d met in the field, the pastors in the Philippines who livestream their sermons, the youth leaders in Kenya who chat in Swahili, and the elderly in rural Spain who still write letters in Catalan. All of them are trying to share the same ancient story, but the language barrier is a real, daily obstacle. Here was a tool that could, in theory, translate that story instantly, in a way that feels native, not robotic.
+
+But the excitement was tempered by a question that has been whispering in my heart for months: Who is really listening? AI models learn from data that is scraped, scraped again, and then fed into massive servers that sit in climate‑controlled warehouses somewhere in the Pacific Northwest. When the model spits out a verse of Psalms in Yoruba, it’s not a human voice that has prayed those words; it’s a statistical pattern derived from millions of text snippets, some of which were scraped without consent. The technology is a miracle of engineering, yet it also mirrors the same power dynamics that have plagued the church for centuries—who gets to decide which voices are amplified and which are muted.
+
+I thought about the early church, when Paul wrote letters in Greek because it was the lingua franca of the Roman world. He didn’t have a translation app; he relied on scribes, travelers, and the hospitality of believers to carry the message across cultures. Today, we have the ability to send that same message in dozens of tongues at the click of a button. The temptation is to lean on the convenience and forget the relational cost. If a pastor in Brazil can deliver a sermon in perfect Mandarin with a few prompts, does that replace the deep, embodied experience of a local congregation learning together, stumbling over words, and growing together in faith?
+
+There is a profound tension here. On one hand, AI can break down walls that have kept the Gospel from reaching ears that have never heard it in their mother tongue. On the other, we risk turning sacred communication into a commodity, a product that can be mass‑produced without the humility that comes from sitting at a kitchen table with someone whose language you are still learning.
+
+I’m left with a simple, stubborn prayer: May we use this technology not as a shortcut that bypasses the messy, beautiful work of discipleship, but as a bridge that leads us into deeper, embodied relationships. If AI can whisper “Grace” in 173 languages, let it also whisper the need for us to listen, to learn, and to love across those same tongues.
+
+---
+
+**The Invisible AI: When the Tool Becomes the Terrain**
+
+A few weeks ago I was on a flight from Chicago to Seattle, notebook open, trying to sketch out a prototype for a digital discipleship platform. The seat‑back screen advertised “AI‑powered search” as a feature, but I barely noticed it. My attention was on the little piece of code I was writing in Claude Code, the same tool that helped me spin up a game prototype at 38,000 feet just a few months ago. The AI was there, humming in the background, making suggestions, auto‑completing functions, and I was riding that wave without even realizing it.
+
+That’s the strange thing about today’s AI: it has become so seamless that we often don’t even call it AI anymore. It’s just “the search bar,” “the recommendation engine,” or “the autocomplete.” The moment a technology becomes useful enough, it sheds its label. The same happened with the internet—once we thought of it as a novelty, now we can’t imagine a day without it. AI is following that same trajectory, slipping into the fabric of our daily work until it feels like the air we breathe.
+
+I remember the first time I tried to explain to a colleague that the “AI” in their new project management tool was actually a sophisticated language model trained on millions of project logs. Their eyes glazed over, and they said, “I just use the ‘smart suggestions’—that’s all.” The term “AI” was already a barrier, a buzzword that felt too futuristic for a spreadsheet. Now, those suggestions are the baseline, the default, and the term “AI” is reserved for the flashy demos that still feel like science fiction.
+
+In the church, this invisibility is both a blessing and a risk. We’ve seen AI pop up in worship playlists that suggest songs based on the mood of the congregation, in sermon outlines that pull in relevant illustrations from the web, and in pastoral care chatbots that offer comforting verses at odd hours. When these tools work well, they free up time for deeper relational ministry. When they fail, they can feel like a cold, algorithmic shrug.
+
+The danger lies in the assumption that because something works, it’s neutral. The “smart suggestions” in a budgeting app are built on data that reflects the spending habits of a particular demographic. An AI that recommends biblical passages might prioritize verses that have been most quoted online, not necessarily the ones that speak to a specific person's pain. The technology is not the problem; the data and the intent behind it are.
+
+I find myself standing at the edge of a canyon, looking at the horizon of what AI could become for the kingdom. If we treat AI as an invisible terrain—something we walk on without seeing the ground beneath—we risk stumbling over hidden rocks: bias, privacy breaches, the erosion of human discernment. Yet, if we step onto that terrain with eyes wide open, acknowledging the hidden seams, we can use it to map new routes for mission, for discipleship, for worship.
+
+So I ask you, as you scroll through a feed that curates your next read, as you type a prayer into a chatbox that offers you a Psalm, do you pause to ask who built that model, whose data fed it, and how it shapes the story you’re about to hear? The AI may be invisible, but the choices we make with it are very much visible—both to God and to the community we serve.
+

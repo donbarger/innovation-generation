@@ -1,11 +1,13 @@
 import os
 import tempfile
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 import re
 from yt_dlp import YoutubeDL
 from yt_dlp.utils import DownloadError
 from dotenv import load_dotenv
+
+from .article_fetcher import fetch_article, validate_article_url
 
 load_dotenv()
 
@@ -97,7 +99,7 @@ def download_and_transcribe_audio(video_id: str, assemblyai_key: str) -> Optiona
                 return None
 
 
-def get_video_transcript(video_url: str) -> Optional[tuple]:
+def get_video_transcript(video_url: str) -> Optional[Tuple[str, str, str]]:
     video_id = None
     if "youtube.com/watch?v=" in video_url:
         video_id = video_url.split("v=")[1].split("&")[0]
@@ -128,3 +130,46 @@ def get_video_transcript(video_url: str) -> Optional[tuple]:
             return None
     except Exception:
         return None
+
+
+def get_article_content(article_url: str) -> Optional[Tuple[str, str, str]]:
+    """
+    Fetch an article from a URL and extract its content.
+    
+    Returns:
+        Tuple of (article_id, title, content) where article_id is based on the URL
+    """
+    if not validate_article_url(article_url):
+        return None
+    
+    result = fetch_article(article_url)
+    if not result:
+        return None
+    
+    url, title, content = result
+    
+    # Generate article_id from URL (remove protocol and special chars)
+    article_id = re.sub(r'[^a-zA-Z0-9-]', '-', url.replace('https://', '').replace('http://', ''))
+    article_id = re.sub(r'-+', '-', article_id)[:50]
+    
+    return (article_id, title, content)
+
+
+def get_source_content(source_url: str) -> Optional[Tuple[str, str, str]]:
+    """
+    Automatically detect if source is a YouTube video or article URL and fetch content.
+    
+    Returns:
+        Tuple of (source_id, title, content)
+    """
+    if not source_url or not isinstance(source_url, str):
+        return None
+    
+    source_url = source_url.strip()
+    
+    # Check if it's a YouTube URL
+    if "youtube.com" in source_url or "youtu.be" in source_url:
+        return get_video_transcript(source_url)
+    
+    # Otherwise treat as article URL
+    return get_article_content(source_url)

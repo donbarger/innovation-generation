@@ -3,5 +3,10 @@ yt-dlp
 youtube-transcript-api
 assemblyai
 requests
+beautifulsoup4
 predictionguard
 python-dotenv
+
+# Optional: For JavaScript rendering support (Medium, etc.)
+# Uncomment to enable: pip install playwright && playwright install
+# playwright

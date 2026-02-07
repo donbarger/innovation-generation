@@ -16,7 +16,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from core.generator import generate_for_video
+from core.generator import generate_for_video, generate_for_article, generate_for_source
 from core.utils import sanitize_filename
 
 # ── Paths ────────────────────────────────────────────────
@@ -58,21 +58,39 @@ class ProgressLogger:
 
 
 class GenerateRequest(BaseModel):
-    video_url: str
+    url: str
+    source_type: str = "auto"  # "video", "article", or "auto"
 
 
 # ── Background worker ────────────────────────────────────
-def _run_generation(job_id: str, video_url: str, logger: ProgressLogger):
+def _run_generation(job_id: str, url: str, source_type: str, logger: ProgressLogger):
     jobs[job_id]["status"] = "running"
-    logger.log(f"📋 Starting generation for: {video_url}")
+    logger.log(f"📋 Starting generation for: {url}")
 
     try:
-        logger.log("🎙️ Extracting video information...")
-        result = generate_for_video(
-            video_url,
-            output_dir=str(ARTICLES_DIR),
-            logger=logger,
-        )
+        if source_type == "article":
+            logger.log("📄 Processing article...")
+            result = generate_for_article(
+                url,
+                output_dir=str(ARTICLES_DIR),
+                logger=logger,
+            )
+        elif source_type == "video":
+            logger.log("🎙️ Extracting video information...")
+            result = generate_for_video(
+                url,
+                output_dir=str(ARTICLES_DIR),
+                logger=logger,
+            )
+        else:
+            # auto-detect
+            logger.log("🔍 Detecting source type...")
+            result = generate_for_source(
+                url,
+                output_dir=str(ARTICLES_DIR),
+                logger=logger,
+            )
+        
         logger.log(f"✅ Generated {result['count']} articles!")
         logger.log("🎉 Done! Your article drafts are ready.")
         jobs[job_id]["status"] = "completed"
@@ -91,21 +109,22 @@ def _run_generation(job_id: str, video_url: str, logger: ProgressLogger):
 
 @app.post("/api/generate")
 def api_generate(req: GenerateRequest):
-    video_url = req.video_url.strip()
-    if not video_url:
-        raise HTTPException(400, "video_url is required")
+    url = req.url.strip()
+    if not url:
+        raise HTTPException(400, "url is required")
 
     job_id = str(uuid.uuid4())
     logger = ProgressLogger(job_id)
     jobs[job_id] = {
         "status": "queued",
-        "video_url": video_url,
+        "url": url,
+        "source_type": req.source_type,
         "created": time.time(),
         "logger": logger,
     }
 
     thread = threading.Thread(
-        target=_run_generation, args=(job_id, video_url, logger), daemon=True
+        target=_run_generation, args=(job_id, url, req.source_type, logger), daemon=True
     )
     thread.start()
     return {"job_id": job_id, "status": "queued"}
@@ -124,11 +143,12 @@ def get_job(job_id: str):
     return out
 
 
-# ── Videos (main listing) ───────────────────────────────
+# ── Sources (main listing) ───────────────────────────────
 @app.get("/api/videos")
 def list_videos():
-    """Return every processed video with article counts."""
-    videos: dict = {}
+    """Return every processed source with article counts."""
+
+    sources: dict = {}
 
     # Scan both new and old CSV files
     for csv_path in [MASTER_CSV, OLD_CSV]:
@@ -136,56 +156,60 @@ def list_videos():
             continue
         with csv_path.open("r", encoding="utf-8") as f:
             for row in csv.DictReader(f):
-                title = row.get("video_title", "Unknown")
-                url = row.get("video_url", "")
+                # Support both old (video_title, video_url) and new (source_title, source_url) formats
+                title = row.get("source_title") or row.get("video_title", "Unknown")
+                url = row.get("source_url") or row.get("video_url", "")
+                source_type = row.get("source_type", "video")
+                id_val = row.get("id") or ""
 
-                if title not in videos:
-                    video_id = _extract_video_id(url)
+                if title not in sources:
                     safe = sanitize_filename(title)
                     has_transcript = (TRANSCRIPTS_DIR / f"{safe}.txt").exists()
 
-                    videos[title] = {
+                    sources[title] = {
+                        "id": id_val,
                         "title": title,
                         "url": url,
-                        "video_id": video_id,
-                        "thumbnail": f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg"
-                        if video_id
-                        else None,
+                        "source_type": source_type,
                         "has_transcript": has_transcript,
                         "article_count": 0,
                     }
 
-                videos[title]["article_count"] += 1
+                sources[title]["article_count"] += 1
 
     # Pick up transcripts that have no CSV entry yet
     if TRANSCRIPTS_DIR.exists():
         for tf in TRANSCRIPTS_DIR.glob("*.txt"):
             meta = _parse_transcript_header(tf)
             t = meta.get("title", tf.stem)
-            if t not in videos:
-                vid = meta.get("video_id", "")
-                videos[t] = {
+            if t not in sources:
+                source_type = meta.get("source_type", "unknown")
+                url = meta.get("source_id", "")
+                sources[t] = {
+                    "id": meta.get("source_id", ""),
                     "title": t,
-                    "url": f"https://youtube.com/watch?v={vid}" if vid else "",
-                    "video_id": vid,
-                    "thumbnail": f"https://img.youtube.com/vi/{vid}/mqdefault.jpg"
-                    if vid
-                    else None,
+                    "url": url,
+                    "source_type": source_type,
                     "has_transcript": True,
                     "article_count": 0,
                 }
 
-    return sorted(videos.values(), key=lambda v: v["title"])
+    return sorted(sources.values(), key=lambda v: v["title"])
 
 
-# ── Single video detail ──────────────────────────────────
-@app.get("/api/videos/{video_id}")
-def get_video_detail(video_id: str):
-    """Return full content for one video: transcript + articles."""
+# ── Single source detail ──────────────────────────────
+@app.get("/api/videos/{source_id}")
+def get_video_detail(source_id: str):
+    """Return full content for one source: transcript + articles."""
 
-    video_title = None
-    video_url = ""
+    source_title = None
+    source_url = ""
+    source_type = "unknown"
     rows: list[dict] = []
+
+    # Decode source_id for robust matching
+    from urllib.parse import unquote
+    decoded_id = unquote(source_id).rstrip('/').lower()
 
     # Search both new and old CSVs
     for csv_path in [MASTER_CSV, OLD_CSV]:
@@ -193,27 +217,30 @@ def get_video_detail(video_id: str):
             continue
         with csv_path.open("r", encoding="utf-8") as f:
             for row in csv.DictReader(f):
-                if video_id in row.get("video_url", ""):
-                    if not video_title:
-                        video_title = row.get("video_title", "Unknown")
-                        video_url = row.get("video_url", "")
+                row_id = (row.get("id") or "").lower()
+                if decoded_id == row_id:
+                    if not source_title:
+                        source_title = row.get("source_title") or row.get("video_title", "Unknown")
+                        source_url = row.get("source_url") or row.get("video_url", "")
+                        source_type = row.get("source_type", "video")
                     rows.append(row)
 
     # Try transcript files
-    if not video_title and TRANSCRIPTS_DIR.exists():
+    if not source_title and TRANSCRIPTS_DIR.exists():
         for tf in TRANSCRIPTS_DIR.glob("*.txt"):
             meta = _parse_transcript_header(tf)
-            if meta.get("video_id") == video_id:
-                video_title = meta.get("title", tf.stem)
-                video_url = f"https://youtube.com/watch?v={video_id}"
+            if source_id in str(meta.get("source_id", "")) or source_id in str(meta.get("video_id", "")):
+                source_title = meta.get("title", tf.stem)
+                source_type = meta.get("source_type", "unknown")
+                source_url = meta.get("source_id", "")
                 break
 
-    if not video_title:
-        raise HTTPException(404, "Video not found")
+    if not source_title:
+        raise HTTPException(404, "Source not found")
 
-    safe = sanitize_filename(video_title)
+    safe = sanitize_filename(source_title)
 
-    # ── Transcript ───────────────────────────────────────
+    # ── Content ──────────────────────────────────────────
     transcript_text = ""
     transcript_file = TRANSCRIPTS_DIR / f"{safe}.txt"
     if transcript_file.exists():
@@ -244,21 +271,21 @@ def get_video_detail(video_id: str):
         articles = _parse_articles_from_file(articles_raw)
 
     return {
-        "title": video_title,
-        "url": video_url,
-        "video_id": video_id,
-        "thumbnail": f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg",
+        "title": source_title,
+        "url": source_url,
+        "source_id": source_id,
+        "source_type": source_type,
         "transcript": transcript_text,
         "articles_raw": articles_raw,
         "articles": articles,
     }
 
 
-# ── Delete a whole video's content ───────────────────────
-@app.delete("/api/videos/{video_id}")
-def delete_video(video_id: str):
+# ── Delete a whole source's content ──────────────────────
+@app.delete("/api/videos/{source_id}")
+def delete_video(source_id: str):
     deleted: list[str] = []
-    video_title = None
+    source_title = None
 
     # Remove rows from both CSVs
     for csv_path in [MASTER_CSV, OLD_CSV]:
@@ -270,12 +297,13 @@ def delete_video(video_id: str):
             reader = csv.DictReader(f)
             fieldnames = reader.fieldnames or []
             for row in reader:
-                if video_id in row.get("video_url", ""):
-                    video_title = row.get("video_title")
+                row_url = row.get("source_url") or row.get("video_url", "")
+                if source_id in row_url:
+                    source_title = row.get("source_title") or row.get("video_title")
                 else:
                     remaining.append(row)
 
-        if fieldnames and video_title:
+        if fieldnames and source_title:
             with csv_path.open("w", encoding="utf-8", newline="") as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
@@ -283,17 +311,17 @@ def delete_video(video_id: str):
             deleted.append(f"CSV rows removed from {csv_path.name}")
 
     # Try transcript files
-    if not video_title and TRANSCRIPTS_DIR.exists():
+    if not source_title and TRANSCRIPTS_DIR.exists():
         for tf in TRANSCRIPTS_DIR.glob("*.txt"):
             meta = _parse_transcript_header(tf)
-            if meta.get("video_id") == video_id:
-                video_title = meta.get("title", tf.stem)
+            if source_id in str(meta.get("source_id", "")) or source_id in str(meta.get("video_id", "")):
+                source_title = meta.get("title", tf.stem)
                 break
 
-    if not video_title:
-        raise HTTPException(404, "Video not found")
+    if not source_title:
+        raise HTTPException(404, "Source not found")
 
-    safe = sanitize_filename(video_title)
+    safe = sanitize_filename(source_title)
 
     # Delete transcript
     tf = TRANSCRIPTS_DIR / f"{safe}.txt"
@@ -308,13 +336,13 @@ def delete_video(video_id: str):
             af.unlink()
             deleted.append(af.name)
 
-    return {"deleted": deleted, "video_title": video_title}
+    return {"deleted": deleted, "source_title": source_title}
 
 
 # ── Delete a single article ──────────────────────────────
-@app.delete("/api/videos/{video_id}/articles/{article_title:path}")
-def delete_article(video_id: str, article_title: str):
-    video_title = None
+@app.delete("/api/videos/{source_id}/articles/{article_title:path}")
+def delete_article(source_id: str, article_title: str):
+    source_title = None
     deleted: list[str] = []
 
     for csv_path in [MASTER_CSV, OLD_CSV]:
@@ -328,13 +356,14 @@ def delete_article(video_id: str, article_title: str):
             fieldnames = reader.fieldnames or []
             for row in reader:
                 title_col = row.get("article_title") or row.get("innovation_title", "")
-                match = video_id in row.get("video_url", "") and title_col == article_title
+                row_url = row.get("source_url") or row.get("video_url", "")
+                match = source_id in row_url and title_col == article_title
                 if match:
-                    video_title = row.get("video_title")
+                    source_title = row.get("source_title") or row.get("video_title")
                 else:
                     remaining.append(row)
 
-        if video_title and fieldnames:
+        if source_title and fieldnames:
             with csv_path.open("w", encoding="utf-8", newline="") as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
@@ -342,7 +371,7 @@ def delete_article(video_id: str, article_title: str):
             deleted.append("CSV row removed")
             break
 
-    if not video_title:
+    if not source_title:
         raise HTTPException(404, "Article not found")
 
     return {"deleted": deleted}
@@ -373,11 +402,15 @@ def _parse_transcript_header(path: Path) -> dict:
     except Exception:
         return {}
     meta: dict = {}
-    for line in text.split("\n")[:5]:
+    for line in text.split("\n")[:10]:
         if line.startswith("Title:"):
             meta["title"] = line.split(":", 1)[1].strip()
         elif line.startswith("Video ID:"):
             meta["video_id"] = line.split(":", 1)[1].strip()
+        elif line.startswith("Source ID:"):
+            meta["source_id"] = line.split(":", 1)[1].strip()
+        elif line.startswith("Source Type:"):
+            meta["source_type"] = line.split(":", 1)[1].strip()
     return meta
 
 

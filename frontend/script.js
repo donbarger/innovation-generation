@@ -94,6 +94,11 @@ async function apiFetch(path, opts = {}) {
 async function loadVideos() {
   try {
     allVideos = await apiFetch("/videos");
+    // Index by id for fast lookup
+    window.allVideosById = {};
+    for (const v of allVideos) {
+      if (v.id) window.allVideosById[v.id] = v;
+    }
     renderVideoList(allVideos);
     updateStats();
   } catch (err) {
@@ -131,8 +136,8 @@ function renderVideoList(videos) {
   list.innerHTML = videos
     .map(
       (v) => `
-    <div class="video-card" id="vc-${v.video_id}" data-vid="${v.video_id}">
-      <div class="video-card-header" onclick="toggleVideoCard('${v.video_id}')">
+    <div class="video-card" id="vc-${v.id}" data-vid="${v.id}">
+      <div class="video-card-header" onclick="toggleVideoCard('${v.id}')">
         ${v.thumbnail
           ? `<img class="video-thumb" src="${v.thumbnail}" alt="" loading="lazy" onerror="this.style.display='none'" />`
           : `<div class="video-thumb skeleton"></div>`
@@ -146,7 +151,7 @@ function renderVideoList(videos) {
         </div>
         <div class="expand-arrow">▾</div>
       </div>
-      <div class="video-card-body" id="vcb-${v.video_id}">
+      <div class="video-card-body" id="vcb-${v.id}">
         <div style="padding:32px; text-align:center; color:var(--text-muted);">
           <span class="spinner"></span>&nbsp; Loading...
         </div>
@@ -423,13 +428,14 @@ async function startGeneration() {
   const url = input.value.trim();
 
   if (!url) {
-    toast("Paste a YouTube URL first", "warning");
+    toast("Paste a YouTube URL or article link first", "warning");
     input.focus();
     return;
   }
 
-  if (!url.includes("youtube.com") && !url.includes("youtu.be")) {
-    toast("That doesn't look like a YouTube URL", "warning");
+  // Simple validation: must start with http/https or contain a domain-like pattern
+  if (!url.startsWith("http://") && !url.startsWith("https://") && !url.includes(".")) {
+    toast("That doesn't look like a valid URL", "warning");
     input.focus();
     return;
   }
@@ -443,10 +449,18 @@ async function startGeneration() {
   progressBox.innerHTML = '<span class="status-badge running">Starting</span>';
 
   try {
+    // Detect source type: YouTube or article
+    let sourceType = "auto";
+    if (url.includes("youtube.com") || url.includes("youtu.be")) {
+      sourceType = "video";
+    } else {
+      sourceType = "article";
+    }
+
     const res = await apiFetch("/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ video_url: url }),
+      body: JSON.stringify({ url: url, source_type: sourceType }),
     });
 
     activeJob = res.job_id;
@@ -478,9 +492,19 @@ function pollJobStatus() {
         btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg> Write Articles`;
 
         if (job.status === "completed") {
-          toast(`Generated ${job.result?.count || 0} article drafts!`, "success");
+          const result = job.result || {};
+          toast(`Generated ${result.count || 0} article drafts!`, "success");
           videoDetails = {};
           await loadVideos();
+          
+          // Auto-open the newly generated source (only if valid)
+          if (result.id) {
+            try {
+              await toggleVideoDetail(result.id);
+            } catch (e) {
+              console.log("Could not auto-open source detail", e);
+            }
+          }
         } else {
           toast(`Generation failed: ${job.error || "Unknown error"}`, "error");
         }

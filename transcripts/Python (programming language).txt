@@ -1,0 +1,423 @@
+Title: Python (programming language)
+Source ID: en-wikipedia-org-wiki-Python-programming-language-
+Source Type: article
+
+Python (programming language)
+117 languages
+Afrikaans
+Alemannisch
+العربية
+Aragonés
+অসমীয়া
+Asturianu
+Azərbaycanca
+تۆرکجه
+Basa Bali
+বাংলা
+閩南語 / Bân-lâm-gí
+Беларуская
+Беларуская (тарашкевіца)
+भोजपुरी
+Български
+Bosanski
+Brezhoneg
+Català
+Cebuano
+Čeština
+Cymraeg
+Dansk
+Deutsch
+Eesti
+Ελληνικά
+Español
+Esperanto
+Euskara
+فارسی
+Français
+Galego
+گیلکی
+ગુજરાતી
+한국어
+Hausa
+Հայերեն
+हिन्दी
+Hrvatski
+Ido
+Bahasa Indonesia
+Interlingua
+Íslenska
+Italiano
+עברית
+ქართული
+Қазақша
+Kiswahili
+Kurdî
+Кыргызча
+ລາວ
+Latina
+Latviešu
+Lietuvių
+La .lojban.
+Lombard
+Magyar
+Македонски
+മലയാളം
+मराठी
+მარგალური
+Bahasa Melayu
+Монгол
+မြန်မာဘာသာ
+Na Vosa Vakaviti
+Nederlands
+नेपाली
+日本語
+ߒߞߏ
+Norsk bokmål
+Norsk nynorsk
+ଓଡ଼ିଆ
+Oʻzbekcha / ўзбекча
+ਪੰਜਾਬੀ
+پنجابی
+ភាសាខ្មែរ
+Piemontèis
+Plattdüütsch
+Polski
+Português
+Qaraqalpaqsha
+Română
+Runa Simi
+Русский
+Саха тыла
+ᱥᱟᱱᱛᱟᱲᱤ
+Scots
+Shqip
+සිංහල
+Simple English
+Slovenčina
+Slovenščina
+کوردی
+Српски / srpski
+Srpskohrvatski / српскохрватски
+Suomi
+Svenska
+Tagalog
+தமிழ்
+Татарча / tatarça
+တႆး
+తెలుగు
+ไทย
+Тоҷикӣ
+Türkçe
+Basa Ugi
+Українська
+اردو
+ئۇيغۇرچە / Uyghurche
+Tiếng Việt
+Walon
+文言
+Winaray
+吴语
+粵語
+中文
+Kadazandusun
+Toki pona
+Edit links
+From Wikipedia, the free encyclopedia
+General-purpose programming language
+This article
+may contain
+unverified
+or
+indiscriminate
+information
+in
+embedded lists
+.
+Please help
+clean up the lists
+by removing items or incorporating them into the text of the article.
+(
+October 2025
+)
+Python
+Paradigm
+Multi-paradigm
+:
+object-oriented
+,
+[
+1
+]
+procedural
+(
+imperative
+),
+functional
+,
+structured
+,
+reflective
+Designed by
+Guido van Rossum
+Developer
+Python Software Foundation
+First appeared
+20 February 1991
+; 34 years ago
+(
+1991-02-20
+)
+[
+2
+]
+Stable release
+3.14.2
+[
+3
+]
+/ 5 December 2025
+; 2 months ago
+(
+5 December 2025
+)
+Typing discipline
+Duck
+,
+dynamic
+,
+strong
+;
+[
+4
+]
+optional type annotations
+[
+a
+]
+Memory management
+Garbage-collected
+OS
+Cross-platform
+[
+b
+]
+License
+Python Software Foundation License
+Filename extensions
+.py, .pyw, .pyz,
+[
+11
+]
+.pyi, .pyc, .pyd
+Website
+python.org
+Major
+implementations
+CPython
+,
+PyPy
+,
+MicroPython
+,
+CircuitPython
+,
+IronPython
+,
+Jython
+,
+Stackless Python
+Dialects
+Cython
+,
+RPython
+,
+Starlark
+[
+12
+]
+Influenced by
+ABC
+,
+[
+13
+]
+Ada
+,
+[
+14
+]
+[
+failed verification
+]
+ALGOL 68
+,
+[
+15
+]
+APL
+,
+[
+16
+]
+C
+,
+[
+17
+]
+C++
+,
+[
+18
+]
+CLU
+,
+[
+19
+]
+Dylan
+,
+[
+20
+]
+Haskell
+,
+[
+21
+]
+[
+16
+]
+Icon
+,
+[
+22
+]
+Lisp
+,
+[
+23
+]
+Modula-3
+,
+[
+15
+]
+[
+18
+]
+Perl
+,
+[
+24
+]
+Standard ML
+[
+16
+]
+Influenced
+Apache Groovy
+,
+Boo
+,
+Cobra
+,
+CoffeeScript
+,
+[
+25
+]
+D
+,
+F#
+,
+GDScript
+,
+Go
+,
+JavaScript
+,
+[
+26
+]
+[
+27
+]
+Julia
+,
+[
+28
+]
+Mojo
+,
+[
+29
+]
+Nim
+,
+Ruby
+,
+[
+30
+]
+Swift
+,
+[
+31
+]
+V
+[
+32
+]
+Python Programming
+at Wikibooks
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Python_(programming_language)&oldid=1336888022
+"
+Categories
+:
+Python (programming language)
+Programming tools
+Web frameworks
+Free software programmed in Python
+Class-based programming languages
+Notebook interface
+Computer science in the Netherlands
+Concurrent programming languages
+Cross-platform free software
+Cross-platform software
+Dutch inventions
+Dynamically typed programming languages
+Educational programming languages
+High-level programming languages
+Information technology in the Netherlands
+Multi-paradigm programming languages
+Object-oriented programming languages
+Pattern matching programming languages
+Programming languages
+Programming languages created in 1991
+Scripting languages
+Text-oriented programming languages
+Monty Python references
+Hidden categories:
+Articles with short description
+Short description matches Wikidata
+Wikipedia semi-protected pages
+Articles needing cleanup from October 2025
+All pages needing cleanup
+Wikipedia list cleanup from October 2025
+Use dmy dates from November 2021
+Use American English from December 2024
+All Wikipedia articles written in American English
+All articles with failed verification
+Articles with failed verification from August 2025
+Articles containing potentially dated statements from 2026
+All articles containing potentially dated statements
+Articles containing potentially dated statements from January 2026
+Articles containing potentially dated statements from March 2025
+All articles with specifically marked weasel-worded phrases
+Articles with specifically marked weasel-worded phrases from August 2025
+All articles with unsourced statements
+Articles with unsourced statements from August 2025
+Pages using Sister project links with wikidata namespace mismatch
+Pages using Sister project links with hidden wikidata
+Articles with example Python (programming language) code

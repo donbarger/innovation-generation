@@ -5,3 +5,9 @@ predictionguard
 assemblyai
 yt-dlp
 youtube-transcript-api
+requests
+beautifulsoup4
+
+# Optional: For JavaScript rendering support (Medium, etc.)
+# Uncomment to enable: pip install playwright && playwright install
+# playwright

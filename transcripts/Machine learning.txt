@@ -1,0 +1,121 @@
+Title: Machine learning
+Source ID: en-wikipedia-org-wiki-Machine-learning
+Source Type: article
+
+Machine learning
+88 languages
+Afrikaans
+العربية
+অসমীয়া
+Azərbaycanca
+تۆرکجه
+বাংলা
+閩南語 / Bân-lâm-gí
+Башҡортса
+Беларуская
+भोजपुरी
+Български
+བོད་ཡིག
+Bosanski
+Català
+Čeština
+Cymraeg
+Dansk
+الدارجة
+Deutsch
+Eesti
+Ελληνικά
+Español
+Esperanto
+Euskara
+فارسی
+Français
+Gaelg
+Galego
+한국어
+Հայերեն
+हिन्दी
+Ido
+Bahasa Indonesia
+IsiZulu
+Íslenska
+Italiano
+עברית
+Jawa
+ಕನ್ನಡ
+ქართული
+Кыргызча
+Latviešu
+Lietuvių
+Ligure
+Magyar
+Македонски
+മലയാളം
+मराठी
+Bahasa Melayu
+Монгол
+Nederlands
+日本語
+Norsk bokmål
+Norsk nynorsk
+Occitan
+ଓଡ଼ିଆ
+Oʻzbekcha / ўзбекча
+ਪੰਜਾਬੀ
+پنجابی
+پښتو
+Polski
+Português
+Qaraqalpaqsha
+Română
+Runa Simi
+Русский
+ᱥᱟᱱᱛᱟᱲᱤ
+Shqip
+Simple English
+Slovenščina
+کوردی
+Српски / srpski
+Srpskohrvatski / српскохрватски
+Suomi
+Svenska
+Tagalog
+தமிழ்
+తెలుగు
+ไทย
+Türkçe
+Українська
+اردو
+ئۇيغۇرچە / Uyghurche
+Tiếng Việt
+Võro
+吴语
+粵語
+中文
+Edit links
+From Wikipedia, the free encyclopedia
+Study of algorithms that improve automatically through experience
+For the journal, see
+Machine Learning (journal)
+.
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Machine_learning&oldid=1336098707
+"
+Categories
+:
+Machine learning
+Cybernetics
+Learning
+Definition
+Data science
+Hidden categories:
+Webarchive template wayback links
+CS1 maint: work parameter with ISBN
+Articles with short description
+Short description is different from Wikidata
+Use dmy dates from April 2025
+Use British English from October 2025
+All Wikipedia articles written in British English
+Articles with excerpts
+All articles with unsourced statements
+Articles with unsourced statements from October 2025

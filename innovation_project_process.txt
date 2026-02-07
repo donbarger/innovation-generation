@@ -1,1 +1,60 @@
-REDACTED - add your project process notes
+Innovation Project Process
+
+Purpose
+-------
+Document the end-to-end workflow for turning a YouTube presentation (or its transcript) into a Substack-ready innovation article written in Don Barger's voice.
+
+Inputs
+------
+- Source material: YouTube video URL or a full transcript saved as `presentation_transcript.txt`.
+- Metadata: video title, speaker name, date, URL (optional but helpful).
+
+Process Overview
+----------------
+1. Ingest
+   - Confirm the transcript file `presentation_transcript.txt` exists and contains the full, unedited transcript.
+   - Save raw audio or video link in project notes for reference.
+
+2. Internal Analysis (private, not output)
+   - Read the entire transcript carefully.
+   - Identify the speaker's main argument, the problem they address, and key assumptions.
+   - Note any cultural, technological, or theological angles that naturally arise.
+   - Ask: "What does a thoughtful Christian, missionary-technologist reader care about here?"
+
+3. Drafting
+   - Follow the `innovation_generation_guidelines.txt` voice and style rules.
+   - Structure the article: Title → Hook opening (human moment) → Reflection → Insight section → (Optional) Christian reflection → Closing with practical takeaway.
+   - Target length: 1,100–1,600 words.
+   - Use short, sparing quotes from the transcript to illuminate points; never paste long sections.
+
+4. Self-Review
+   - Ensure the piece reads like Don thinking aloud: warm, curious, strategically minded, not preachy.
+   - Check for forbidden patterns: no summary sections, no bullet lists in the final article, no heavy theological jargon, and no forced faith connections.
+   - Confirm quotes are integrated and attributed cleanly when used.
+
+5. Finalize
+   - Produce a single file containing only the polished article text (ready to copy into Substack).
+   - Name or save the file according to your local publishing workflow (e.g., `article_<slug>.txt`).
+
+Quality Checklist
+-----------------
+- Voice: Personal, warm, occasionally self-deprecating, reflective but practical.
+- Structure: Opens with a human moment; ends with a reflective, actionable takeaway.
+- Sources: Transcript quoted sparingly and integrated into narrative.
+- Length: Within target range.
+- Output: Final file contains only the article — no notes, analysis, or meta commentary.
+
+Roles & Responsibilities
+-----------------------
+- Author (Don): final editorial sign-off, tone calibration.
+- Assistant (writing tool): performs analysis privately and drafts articles per guidelines.
+
+Files & Links
+-------------
+- Primary transcript: `presentation_transcript.txt`
+- Guidelines reference: `innovation_generation_guidelines.txt`
+
+Next Steps
+----------
+- Use this process as the canonical workflow for article generation.
+- Update `innovation_generation_guidelines.txt` links or examples as needed.

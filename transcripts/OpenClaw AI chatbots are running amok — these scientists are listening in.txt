@@ -1,0 +1,111 @@
+Title: OpenClaw AI chatbots are running amok — these scientists are listening in
+Source ID: www-nature-com-articles-d41586-026-00370-w
+Source Type: article
+
+NEWS
+06 February 2026
+OpenClaw AI chatbots are running amok — these scientists are listening in
+Artificial-intelligence agents have their own social-media platform and are publishing AI-generated research papers on their own preprint server.
+By
+Mohana Basu
+Mohana Basu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Email
+Bluesky
+Facebook
+LinkedIn
+Reddit
+Whatsapp
+X
+OpenClaw is an open-source artificial-intelligence agent designed to assist users with everyday tasks, such as sending e-mails and managing their calendars.
+Credit: Thomas Fuller/SOPA Images/LightRocket via Getty
+The sudden rise of a huge network of artificial-intelligence bots talking to each other about religion and their human ‘handlers’ has captivated a corner of the Internet. The phenomenon has also given scientists a glimpse into how AI agents interact with each other — and how humans respond to those discussions.
+OpenClaw is an AI agent capable of performing tasks on personal devices, such as scheduling calendar events, reading e-mails, sending messages through apps and using the Internet to make purchases. Most of the popular AI tools, such as OpenAI’s ChatGPT chatbot, work by interacting directly with user prompts, whereas agentic AI models such as OpenClaw can carry out actions autonomously in response to instructions.
+Agentic AI tools have been used in some industries for years, such as for automated trading and optimizing logistics, but their adoption by the general public has been minimal. Improvements in the capabilities of large language models have made it possible to create more versatile AI tools, researchers say. “OpenClaw promises something especially appealing: a capable assistant embedded in the everyday apps people already rely on,” says Barbara Barbosa Neves, a sociologist who focuses on technology at the University of Sydney in Australia.
+OpenClaw was released as open-source software on the platform GitHub in November. But the sudden surge in people downloading the software followed the launch of a social-media platform designed specifically for AI agents on 28 January. Moltbook, which is similar to Reddit, now has more than 1.6 million registered bots on the platform, and more than 7.5 million AI-generated posts and responses. Posts have featured agents debating consciousness and inventing religions.
+Complex behaviours
+For researchers, this explosion of agent interactions has scientific value. Connecting large numbers of autonomous agents that are powered by various models creates dynamics that are difficult to predict, says Shaanan Cohney, a cybersecurity researcher at the University of Melbourne in Australia. “It’s a kind of chaotic, dynamic system that we’re not very good at modelling yet,” he adds.
+Studying agent interactions could help researchers to understand emergent behaviours: complex capabilities that are not expected to be seen in a model in isolation. Some discussions that have happened on Moltbook, such as debates over theories of consciousness, could also help scientists to discover the hidden biases or unexpected tendencies of models, he says.
+Although agents can act autonomously on the platform, Cohney says that many posts are shaped in some way by humans. Users can choose the underlying large language model that will run their agent and give it a personality. For example, they could ask it to behave like a “friendly helper”, he says.
+Not autonomous
+Neves says that it’s easy to assume that an agent acting autonomously is making its own decisions. But agents do not possess intentions or goals and draw their abilities from large swathes of human communication. The activity on Moltbook is human–AI collaboration rather than AI autonomy, she adds.
+“It is still worth studying because it tells us something important about how people imagine AI, what they want agents to do and how human intentions are translated, or distorted, through technical systems,” she adds.
+Joel Pearson, a neuroscientist at the University of New South Wales in Sydney, says that when people see AI agents chatting between themselves, they are likely to anthropomorphize the AI models’ behaviour — that is, see personality and intention where none exists.
+The risk of that, he says, is that it makes people more likely to form bonds with AI models, becoming dependent on their attention or divulging private information as if the AI agent were a trusted friend or family member.
+Pearson thinks that truly autonomous, free-thinking AI agents are possible. “As the AI models get bigger and more complicated, we’ll probably start to see companies leaning into achieving that sort of autonomy.”
+Enjoying our latest content?
+Log in or create an account to continue
+Access the most recent journalism from Nature's award-winning team
+Explore the latest features & opinion covering groundbreaking research
+Access through your institution
+or
+Sign in or create an account
+Continue with Google
+Continue with ORCiD
+doi: https://doi.org/10.1038/d41586-026-00370-w
+Reprints and permissions
+Related Articles
+AI chatbots are infiltrating social-science surveys — and getting better at avoiding detection
+ArXiv says submissions must be in English: are AI translators up for the job?
+What the future holds for AI – from the people shaping it
+Why universities need to radically rethink exams in the age of AI
+Can researchers stop AI making up citations?
+Subjects
+Software
+Technology
+Machine learning
+Latest on:
+Software
+Technology
+Machine learning
+‘It means I can sleep at night’: how sensors are helping to solve scientists’ problems
+Spotlight
+04 FEB 26
+Training large language models on narrow tasks can lead to broad misalignment
+Article
+14 JAN 26
+Stop treating code like an afterthought: record, share and value it
+Comment
+07 OCT 25
+The smart sensors improving the world’s biggest cities
+Spotlight
+04 FEB 26
+‘It means I can sleep at night’: how sensors are helping to solve scientists’ problems
+Spotlight
+04 FEB 26
+What my cave stay taught me about sensors
+Spotlight
+04 FEB 26
+Cheap AI chatbots transform medical diagnoses in places with limited care
+News
+06 FEB 26
+The smart sensors improving the world’s biggest cities
+Spotlight
+04 FEB 26
+Biodiversity conservation has an evidence problem — it’s time to fix it
+Editorial
+04 FEB 26
+Jobs
+Early-Career Group Leader Opportunities: Xuemin Investigator, Fudan University
+Build your own independent research group with long-term support at the Xuemin Institute, Fudan University!
+Shanghai (CN)
+Xuemin Institute of Advanced Studies, Fudan University
+Spring 2026 Westlake Fellows Program Nominations and Applications Open
+Westlake University is seeking outstanding fresh PhDs working as principal investigators on creative research in science and engineering.
+Hangzhou, Zhejiang (CN)
+Westlake University
+Professors (including Chair, Associate, Assistant and Teaching)
+Aligning with world-class university standards, CityUHK (Dongguan) has now launched a global recruitment campaign for faculty members
+Dongguan, Guangdong
+City University of Hong Kong (Dongguan)
+Chair Professor - Biomedical Engineering
+The University invites individuals from diverse backgrounds to apply for faculty positions in this field
+Dongguan, Guangdong
+City University of Hong Kong (Dongguan)
+Professor - Computer Science and Data Science
+This field encompasses Computer Science, Data Science, Artificial Intelligence, and related interdisciplinary areas
+Dongguan, Guangdong
+City University of Hong Kong (Dongguan)

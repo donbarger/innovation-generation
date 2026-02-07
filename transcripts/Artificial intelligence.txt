@@ -1,0 +1,480 @@
+Title: Artificial intelligence
+Source ID: en-wikipedia-org-wiki-Artificial-intelligence
+Source Type: article
+
+Artificial intelligence
+173 languages
+Afrikaans
+Alemannisch
+አማርኛ
+अंगिका
+العربية
+Aragonés
+Արեւմտահայերէն
+অসমীয়া
+Asturianu
+Avañe'ẽ
+Azərbaycanca
+تۆرکجه
+বাংলা
+閩南語 / Bân-lâm-gí
+Башҡортса
+Беларуская
+Беларуская (тарашкевіца)
+भोजपुरी
+Bikol Central
+Български
+Boarisch
+བོད་ཡིག
+Bosanski
+Brezhoneg
+Буряад
+Català
+Чӑвашла
+Cebuano
+Čeština
+Cymraeg
+Dansk
+الدارجة
+Deutsch
+Eesti
+Ελληνικά
+Español
+Esperanto
+Estremeñu
+Euskara
+فارسی
+Fiji Hindi
+Français
+Furlan
+Gaeilge
+Gaelg
+Gàidhlig
+Galego
+贛語
+Gĩkũyũ
+गोंयची कोंकणी / Gõychi Konknni
+한국어
+Hausa
+Հայերեն
+हिन्दी
+Hrvatski
+Ido
+Igbo
+Ilokano
+Bahasa Indonesia
+Interlingua
+Interlingue
+IsiZulu
+Íslenska
+Italiano
+עברית
+Jawa
+ಕನ್ನಡ
+ქართული
+کٲشُر
+Қазақша
+Kiswahili
+Kreyòl ayisyen
+Kriyòl gwiyannen
+Kurdî
+Кыргызча
+ລາວ
+Latina
+Latviešu
+Lëtzebuergesch
+Lietuvių
+Ligure
+Limburgs
+La .lojban.
+Lombard
+Magyar
+Madhurâ
+Македонски
+Malagasy
+മലയാളം
+Malti
+मराठी
+მარგალური
+مصرى
+Bahasa Melayu
+Minangkabau
+Монгол
+မြန်မာဘာသာ
+Nederlands
+Nedersaksies
+नेपाली
+नेपाल भाषा
+日本語
+Nordfriisk
+Norsk bokmål
+Norsk nynorsk
+Occitan
+ଓଡ଼ିଆ
+Oʻzbekcha / ўзбекча
+ਪੰਜਾਬੀ
+پنجابی
+ပအိုဝ်ႏဘာႏသာႏ
+پښتو
+Patois
+ភាសាខ្មែរ
+Picard
+Piemontèis
+Plattdüütsch
+Polski
+Português
+Qaraqalpaqsha
+Qırımtatarca
+Reo tahiti
+Ripoarisch
+Română
+Runa Simi
+Русиньскый
+Русский
+Саха тыла
+संस्कृतम्
+Sängö
+Scots
+Sesotho sa Leboa
+Shqip
+Sicilianu
+සිංහල
+Simple English
+سنڌي
+Slovenčina
+Slovenščina
+کوردی
+Српски / srpski
+Srpskohrvatski / српскохрватски
+Suomi
+Svenska
+Tagalog
+தமிழ்
+Татарча / tatarça
+తెలుగు
+ไทย
+Тоҷикӣ
+Türkçe
+Türkmençe
+Українська
+اردو
+ئۇيغۇرچە / Uyghurche
+Vèneto
+Tiếng Việt
+Võro
+Walon
+文言
+Winaray
+吴语
+ייִדיש
+粵語
+Zazaki
+Žemaitėška
+中文
+Betawi
+Kadazandusun
+Fɔ̀ngbè
+Jaku Iban
+ꠍꠤꠟꠐꠤ
+ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ
+Edit links
+From Wikipedia, the free encyclopedia
+Intelligence of machines
+"AI" redirects here. For other uses, see
+AI (disambiguation)
+and
+Artificial intelligence (disambiguation)
+.
+Part of
+a series
+on
+Artificial intelligence (AI)
+Major goals
+Artificial general intelligence
+Intelligent agent
+Recursive self-improvement
+Planning
+Computer vision
+General game playing
+Knowledge representation
+Natural language processing
+Robotics
+AI safety
+Approaches
+Machine learning
+Symbolic
+Deep learning
+Bayesian networks
+Evolutionary algorithms
+Hybrid intelligent systems
+Systems integration
+Open-source
+AI data centers
+Applications
+Bioinformatics
+Deepfake
+Earth sciences
+Finance
+Generative AI
+Art
+Audio
+Music
+Government
+Healthcare
+Mental health
+Industry
+Software development
+Translation
+Military
+Physics
+Projects
+Philosophy
+AI alignment
+Artificial consciousness
+The bitter lesson
+Chinese room
+Friendly AI
+Ethics
+Existential risk
+Turing test
+Uncanny valley
+Human–AI interaction
+History
+Timeline
+Progress
+AI winter
+AI boom
+AI bubble
+Controversies
+Deepfake pornography
+Taylor Swift deepfake pornography controversy
+Grok deepfake pornography controversy
+Google Gemini image generation controversy
+Pause Giant AI Experiments
+Removal of Sam Altman from OpenAI
+Statement on AI Risk
+Tay (chatbot)
+Théâtre D'opéra Spatial
+Voiceverse NFT plagiarism scandal
+Glossary
+Glossary
+Artificial intelligence
+(
+AI
+) is the capability of
+computational systems
+to perform tasks typically associated with
+human intelligence
+, such as
+learning
+,
+reasoning
+,
+problem-solving
+,
+perception
+, and
+decision-making
+. It is a
+field of research
+in
+computer science
+that develops and studies methods and
+software
+that enable machines to perceive their environment and use
+learning
+and
+intelligence
+to take actions that maximize their chances of achieving defined goals.
+[
+1
+]
+High-profile
+applications of AI
+include advanced
+web search engines
+(e.g.,
+Google Search
+);
+recommendation systems
+(used by
+YouTube
+,
+Amazon
+, and
+Netflix
+);
+virtual assistants
+(e.g.,
+Google Assistant
+,
+Siri
+, and
+Alexa
+);
+autonomous vehicles
+(e.g.,
+Waymo
+);
+generative
+and
+creative
+tools (e.g.,
+language models
+and
+AI art
+); and
+superhuman
+play and analysis in
+strategy games
+(e.g.,
+chess
+and
+Go
+). However, many AI applications are not perceived as AI: "A lot of cutting edge AI has filtered into general applications, often without being called AI because once something becomes useful enough and common enough it's
+not labeled AI anymore
+."
+[
+2
+]
+[
+3
+]
+Various subfields of AI research are centered around particular goals and the use of particular tools. The traditional goals of AI research include learning,
+reasoning
+,
+knowledge representation
+,
+planning
+,
+natural language processing
+,
+perception
+, and support for
+robotics
+.
+[
+a
+]
+To reach these goals, AI researchers have adapted and integrated a wide range of techniques, including
+search
+and
+mathematical optimization
+,
+formal logic
+,
+artificial neural networks
+, and methods based on
+statistics
+,
+operations research
+, and
+economics
+.
+[
+b
+]
+AI also draws upon
+psychology
+,
+linguistics
+,
+philosophy
+,
+neuroscience
+, and other fields.
+[
+4
+]
+Some companies, such as
+OpenAI
+,
+Google DeepMind
+and
+Meta
+,
+[
+5
+]
+aim to create
+artificial general intelligence
+(AGI) – AI that can complete virtually any cognitive task at least as well as a human.
+Artificial intelligence was founded as an academic discipline in 1956,
+[
+6
+]
+and the field went through multiple cycles of optimism throughout
+its history
+,
+[
+7
+]
+[
+8
+]
+followed by periods of disappointment and loss of funding, known as
+AI winters
+.
+[
+9
+]
+[
+10
+]
+Funding and interest vastly increased after 2012 when
+graphics processing units
+started being used to accelerate neural networks, and
+deep learning
+outperformed previous AI techniques.
+[
+11
+]
+This growth accelerated further after 2017 with the
+transformer architecture
+.
+[
+12
+]
+In the 2020s, an ongoing period of rapid
+progress
+in advanced generative AI became known as the
+AI boom
+. Generative AI's ability to create and modify content has led to several
+unintended consequences and harms
+.
+Ethical concerns
+have been raised about
+AI's long-term effects
+and
+potential existential risks
+, prompting discussions about
+regulatory policies
+to ensure
+the safety
+and benefits of the technology.
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Artificial_intelligence&oldid=1336676724
+"
+Categories
+:
+Artificial intelligence
+Computational fields of study
+Computational neuroscience
+Cybernetics
+Data science
+Formal sciences
+Intelligence by type
+Hidden categories:
+Webarchive template wayback links
+CS1 German-language sources (de)
+CS1 Russian-language sources (ru)
+CS1 Japanese-language sources (ja)
+Articles with short description
+Short description is different from Wikidata
+Use dmy dates from October 2025
+Wikipedia indefinitely semi-protected pages
+Articles with excerpts
+Pages displaying short descriptions of redirect targets via Module:Annotated link
+CS1: long volume value
+Pages using Sister project links with hidden wikidata
+Articles with Internet Encyclopedia of Philosophy links
